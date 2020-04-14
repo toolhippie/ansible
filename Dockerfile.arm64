@@ -7,6 +7,8 @@ LABEL maintainer="Thomas Boerger <thomas@webhippie.de>" \
 
 ENTRYPOINT [""]
 
+ENV PY_COLORS=1
+
 RUN apk update && \
   apk upgrade && \
   apk add rsync openssh-client libffi-dev && \
