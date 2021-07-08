@@ -11,8 +11,8 @@ ENV PY_COLORS=1
 
 RUN apk update && \
   apk upgrade && \
-  apk add rsync openssh-client libressl libressl-dev libffi-dev build-base && \
+  apk add rsync openssh-client libressl libressl-dev libffi-dev build-base rust && \
   pip3 install -U pip ansible requests netaddr kubernetes && \
-  apk del libressl-dev libffi-dev build-base && \
+  apk del libressl-dev libffi-dev build-base rust && \
   rm -rf /var/cache/apk/* && \
   ansible-galaxy collection install kubernetes.core
