@@ -39,7 +39,8 @@
             "matchDatasources": [
                 "github-releases",
                 "github-tags",
-                "go"
+                "go",
+                "pypi"
             ],
             "matchUpdateTypes": [
                 "major"
@@ -53,7 +54,8 @@
             "matchDatasources": [
                 "github-releases",
                 "github-tags",
-                "go"
+                "go",
+                "pypi"
             ],
             "matchUpdateTypes": [
                 "minor"
@@ -67,7 +69,8 @@
             "matchDatasources": [
                 "github-releases",
                 "github-tags",
-                "go"
+                "go",
+                "pypi"
             ],
             "matchUpdateTypes": [
                 "patch"
