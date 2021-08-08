@@ -101,7 +101,6 @@ jobs:
           provider: quay
           target: quay.io/${{ github.repository }}
           apikey: ${{ secrets.QUAY_APIKEY }}
-          description: Docker image for ansible
           readme: README.md
 
 ...
