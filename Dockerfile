@@ -4,7 +4,7 @@ ENTRYPOINT [""]
 ENV PY_COLORS=1
 
 # renovate: datasource=pypi depName=ansible
-ENV ANSIBLE_VERSION=4.2.0
+ENV ANSIBLE_VERSION=4.3.0
 
 RUN apk update && \
   apk upgrade && \
