@@ -67,7 +67,7 @@ jobs:
         with:
           registry: quay.io
           username: ${{ secrets.QUAY_USERNAME }}
-          password: ${{ secrets.QUAY_APIKEY }}
+          password: ${{ secrets.QUAY_PASSWORD }}
 
       - name: Docker build
         id: docker
