@@ -33,7 +33,6 @@ jobs:
             latest=true
           tags: |
             type=schedule,pattern={{date 'YYYYMMDD'}}
-            type=ref,enable=true,event=branch
             type=ref,enable=true,event=tag
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
