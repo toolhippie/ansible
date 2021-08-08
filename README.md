@@ -1,7 +1,6 @@
 # ansible
 
-[![Build Status](https://cloud.drone.io/api/badges/toolhippie/ansible/status.svg)](https://cloud.drone.io/toolhippie/ansible)
-[![](https://images.microbadger.com/badges/image/toolhippie/ansible:latest.svg)](https://microbadger.com/images/toolhippie/ansible:latest "Get your own image badge on microbadger.com")
+[![Docker Build](https://github.com/toolhippie/ansible/workflows/docker/badge.svg)](https://github.com/toolhippie/ansible/actions?query=workflow%3Adocker) [![Docker Size](https://img.shields.io/docker/image-size/toolhippie/alpine/latest)](#) [![Docker Pulls](https://img.shields.io/docker/pulls/toolhippie/alpine)](https://hub.docker.com/r/toolhippie/alpine)
 
 **All these images are used for various scriptings, it's possible that any of these tools are updated randomly**
 
