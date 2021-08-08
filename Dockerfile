@@ -1,9 +1,4 @@
-FROM webhippie/python:latest-amd64
-
-LABEL maintainer="Thomas Boerger <thomas@webhippie.de>" \
-  org.label-schema.name="Ansible" \
-  org.label-schema.vendor="Thomas Boerger" \
-  org.label-schema.schema-version="1.0"
+FROM webhippie/python:latest
 
 ENTRYPOINT [""]
 
