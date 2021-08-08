@@ -1,0 +1,82 @@
+{
+    "extends": [
+        "config:base",
+        ":semanticCommits",
+        ":semanticCommitType(deps)",
+        ":automergeMinor"
+    ],
+    "enabledManagers": [
+        "dockerfile",
+        "github-actions"
+    ],
+    "dockerfile": {
+        "pinDigests": false
+    },
+    "regexManagers": [{
+        "fileMatch": [
+            "Dockerfile"
+        ],
+        "matchStrings": [
+            "# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)( versioning=(?<versioning>.*?))?\\nENV .*?_VERSION=\"(?<currentValue>)\"\\s"
+        ]
+    }],
+    "packageRules": [{
+            "description": "Automerge docker version updates",
+            "groupName": "docker updates",
+            "matchDatasources": [
+                "docker"
+            ],
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
+            ],
+            "semanticCommitScope": "minor",
+            "automerge": true
+        },
+        {
+            "description": "Semantic commits for major updates",
+            "groupName": "major updates",
+            "matchDatasources": [
+                "github-releases",
+                "github-tags",
+                "go"
+            ],
+            "matchUpdateTypes": [
+                "major"
+            ],
+            "semanticCommitScope": "major",
+            "automerge": true
+        },
+        {
+            "description": "Semantic commits for minor updates",
+            "groupName": "minor updates",
+            "matchDatasources": [
+                "github-releases",
+                "github-tags",
+                "go"
+            ],
+            "matchUpdateTypes": [
+                "minor"
+            ],
+            "semanticCommitScope": "minor",
+            "automerge": true
+        },
+        {
+            "description": "Semantic commits for patch updates",
+            "groupName": "patch updates",
+            "matchDatasources": [
+                "github-releases",
+                "github-tags",
+                "go"
+            ],
+            "matchUpdateTypes": [
+                "patch"
+            ],
+            "semanticCommitScope": "patch",
+            "automerge": true
+        }
+    ],
+    "labels": [
+        "renovate"
+    ]
+}
