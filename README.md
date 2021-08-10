@@ -1,11 +1,8 @@
 # ansible
 
-[![Docker Build](https://github.com/toolhippie/ansible/workflows/docker/badge.svg)](https://github.com/toolhippie/ansible/actions?query=workflow%3Adocker) [![Docker Size](https://img.shields.io/docker/image-size/toolhippie/ansible/latest)](https://hub.docker.com/r/toolhippie/ansible) [![Docker Pulls](https://img.shields.io/docker/pulls/toolhippie/ansible)](https://hub.docker.com/r/toolhippie/ansible)
+[![Docker Build](https://github.com/toolhippie/ansible/workflows/docker/badge.svg)](https://github.com/toolhippie/ansible/actions?query=workflow%3Adocker) [![Docker Size](https://img.shields.io/docker/image-size/toolhippie/ansible/latest)](https://hub.docker.com/r/toolhippie/ansible) [![Docker Pulls](https://img.shields.io/docker/pulls/toolhippie/ansible)](https://hub.docker.com/r/toolhippie/ansible) [![GitHub Repo](https://img.shields.io/badge/github-repo-yellowgreen)](https://github.com/toolhippie/ansible) [![Upstream Repo](https://img.shields.io/badge/upstream-repo-yellow)](https://github.com/ansible/ansible)
 
 **All these images are used for various scriptings, it's possible that any of these tools are updated randomly**
-
-* [GitHub](https://github.com/toolhippie/ansible)
-* [Upstream](https://github.com/ansible/ansible)
 
 ## Versions
 
@@ -17,7 +14,7 @@ Fork -> Patch -> Push -> Pull Request
 
 ## Authors
 
-* [Thomas Boerger](https://github.com/tboerger)
+*  [Thomas Boerger](https://github.com/tboerger)
 
 ## License
 
@@ -25,6 +22,6 @@ MIT
 
 ## Copyright
 
-```
+```console
 Copyright (c) 2019 Thomas Boerger <http://www.webhippie.de>
 ```
