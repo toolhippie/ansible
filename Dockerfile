@@ -1,4 +1,4 @@
-FROM webhippie/python:3.7
+FROM webhippie/python:3.9
 ENTRYPOINT [""]
 ENV PY_COLORS=1
 ENV ANSIBLE_FORCE_COLOR=true
