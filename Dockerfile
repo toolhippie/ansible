@@ -1,4 +1,4 @@
-FROM webhippie/alpine:3.15
+FROM webhippie/alpine:3.16
 ENTRYPOINT [""]
 ENV PY_COLORS=1
 ENV ANSIBLE_FORCE_COLOR=true
