@@ -10,5 +10,8 @@
                 "pypi"
             ]
         }
+    ],
+    "ignoreDeps": [
+        "docker/build-push-action"
     ]
 }
