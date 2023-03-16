@@ -1,4 +1,4 @@
-FROM webhippie/alpine:3.17
+FROM ghcr.io/webhippie/alpine:3.17
 ENTRYPOINT [""]
 ENV PY_COLORS=1
 ENV ANSIBLE_FORCE_COLOR=true
