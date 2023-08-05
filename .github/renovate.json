@@ -2,16 +2,5 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "github>toolhippie/.github//renovate/preset"
-    ],
-    "packageRules": [
-        {
-            "groupName": "ansible packages",
-            "matchDatasources": [
-                "pypi"
-            ]
-        }
-    ],
-    "ignoreDeps": [
-        "docker/build-push-action"
     ]
 }
