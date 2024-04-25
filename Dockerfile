@@ -8,7 +8,7 @@ ENV ANSIBLE_VERSION=9.5.1
 
 RUN apk update && \
   apk upgrade && \
-  apk add gnupg git rsync openssh-client python3 python3-dev py3-pip py3-psycopg2 build-base openssl-dev libffi-dev cargo && \
+  apk add gnupg git rsync openssh-client python3 python3-dev py3-pip py3-psycopg2 build-base openssl-dev libffi-dev cargo sshpass && \
   apk add --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community sops && \
   pip3 install --break-system-packages -U ansible==${ANSIBLE_VERSION} requests netaddr boto3 kubernetes PyMySQL && \
   apk del build-base openssl-dev libffi-dev cargo && \
