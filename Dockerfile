@@ -1,4 +1,4 @@
-FROM ghcr.io/dockhippie/alpine:3.20
+FROM ghcr.io/dockhippie/alpine:3.21
 ENTRYPOINT [""]
 ENV PY_COLORS=1
 ENV ANSIBLE_FORCE_COLOR=true
